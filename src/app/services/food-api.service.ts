@@ -8,13 +8,10 @@ import { Food } from '../interfaces/food';
 })
 export class FoodApiService {
 
-  baseUrl = "http://localhost:3000/foods/";
+  baseUrl = "http://localhost:3000/db/";
 
   constructor(private _httpService: HttpClient) { }
 
-  // getAllFoodsFound(foodName:string): Observable<Food[]> {
-  //   return this._httpService.get<Food[]>(`${this.baseUrl}/${foodName}`);
-  // }
 
   getFoods(foodName: string): Observable<Food[]> {
     const url = `${this.baseUrl}?name_like=${encodeURIComponent(foodName)}`;
