@@ -12,7 +12,7 @@ export class UserService {
 
   constructor(private _httpService: HttpClient) { }
 
-  getUserById(id: number): Observable<User> {
+  getUserById(id: string): Observable<User> {
     return this._httpService.get<User>(`${this.baseUrl}/${id}`);
   }
 
@@ -20,8 +20,7 @@ export class UserService {
     return this._httpService.post<User>(this.baseUrl, user).pipe(
       tap((user) => {
         // Guarda el ID del usuario registrado en localStorage
-        const id = String(user.id)
-        localStorage.setItem('userToken', id || ''); // Aquí guardas el ID generado
+        localStorage.setItem('userToken', user.id || ''); // Aquí guardas el ID generado
         console.log(localStorage.getItem('userToken'));
       })
     );

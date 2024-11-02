@@ -1,7 +1,7 @@
 import { Meals } from "./meals";
 
 export interface User {
-    id?: number;
+    id?: string;
     name: string;
     surname: string;
     mail: string;

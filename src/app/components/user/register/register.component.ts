@@ -48,11 +48,13 @@ export class RegisterComponent {
 
       calories = nutritionUtils.calcularTMB(dataUser);
 
+      newUser.caloriesNeeded = calories;
+
       // Llama al servicio para registrar el usuario y luego redirige
       this.userService.addUser(newUser).subscribe({
         next: () => {
 
-          // this.router.navigate(['/userProfile']); // Redirige al perfil de usuario
+          this.router.navigate(['/userProfile']); // Redirige al perfil de usuario
         },
         error: (error) => {
           console.error('Error registrando usuario:', error);

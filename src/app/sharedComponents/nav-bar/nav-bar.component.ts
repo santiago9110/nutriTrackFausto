@@ -1,12 +1,39 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
+
+  isLoggedIn: boolean = false;
+
+  constructor(private authService: AuthService, private router: Router) {}
+
+  ngOnInit() {
+    // Subscribirse al estado de autenticación para actualizar `isLoggedIn`
+    this.authService.isAuthenticated$.subscribe(isAuthenticated => {
+      this.isLoggedIn = isAuthenticated;
+    });
+  }
+
+  navigateToRegister() {
+    this.router.navigate(['/register']);
+  }
+
+  login() {
+    this.router.navigate(['/login']);
+  }
+
+  logout() {
+    this.authService.logout(); // Llama al método de logout del servicio de autenticación
+    this.router.navigate(['']);
+  }
 
 }
