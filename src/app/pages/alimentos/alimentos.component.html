@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+
+<app-barra-buscadora-comidas (foodNameEmitter)="reciveFoodName($event)"></app-barra-buscadora-comidas>
+
+@if(allFood){
+<div class="food-container">
+    @for (f of arrayFoods; track $index) {
+    <app-food-container [foodRecived]="f" (foodClickEmitter)="foodReciber($event)"></app-food-container>
+    }
+</div>
+}@else if (oneFood) {
+<div class="container-one-food">
+    <button class="btn-back" (click)="changeMode()">Back</button>
+    <app-food-detail [foodRecived]="foodSelected"></app-food-detail>
+</div>
+
+}

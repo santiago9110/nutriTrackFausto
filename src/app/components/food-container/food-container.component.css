@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D3D3D3;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.container:hover{
+    transform: scale(1.01);
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.calories{
+    font-size: 18px;
+    font-weight: 500;
+}
