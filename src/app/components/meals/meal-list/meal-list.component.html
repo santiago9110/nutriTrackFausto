@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="mealType">
+        <label for="">Breakfast</label>
+        <app-meal-card [arrayFood]="breakfast" (deleteEmmiter)="deleteFoodFromMeal($event)"></app-meal-card>
+    </div>
+
+    <div class="mealType">
+        <label for="">Lunch</label>
+        <app-meal-card [arrayFood]="lunch" (deleteEmmiter)="deleteFoodFromMeal($event)"></app-meal-card>
+    </div>
+
+    <div class="mealType">
+        <label for="">Snack</label>
+        <app-meal-card [arrayFood]="snack" (deleteEmmiter)="deleteFoodFromMeal($event)"></app-meal-card>
+    </div>
+
+    <div class="mealType">
+        <label for="">Dinner</label>
+        <app-meal-card [arrayFood]="dinner" (deleteEmmiter)="deleteFoodFromMeal($event)"></app-meal-card>
+    </div>
+</div>

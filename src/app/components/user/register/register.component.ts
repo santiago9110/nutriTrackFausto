@@ -61,8 +61,6 @@ export class RegisterComponent {
           console.error('Error registrando usuario:', error);
         },
       });
-
-
     }
   }
 

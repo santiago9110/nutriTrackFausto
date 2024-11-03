@@ -102,6 +102,83 @@
           "fats": 0.5
         }
       ]
+    },
+    {
+      "id": "2",
+      "idUser": "c9bc",
+      "date": "2020-12-2",
+      "breakfast": [
+        {
+          "id": 1,
+          "name": "Oatmeal",
+          "calories": 150,
+          "carbohydrates": 27,
+          "proteins": 5,
+          "fats": 3
+        },
+        {
+          "id": 2,
+          "name": "Banana",
+          "calories": 105,
+          "carbohydrates": 27,
+          "proteins": 1,
+          "fats": 0.3
+        }
+      ],
+      "lunch": [
+        {
+          "id": 3,
+          "name": "Grilled Chicken Breast",
+          "calories": 200,
+          "carbohydrates": 0,
+          "proteins": 38,
+          "fats": 4.5
+        },
+        {
+          "id": 4,
+          "name": "Brown Rice",
+          "calories": 215,
+          "carbohydrates": 45,
+          "proteins": 5,
+          "fats": 1.8
+        }
+      ],
+      "snack": [
+        {
+          "id": 5,
+          "name": "Greek Yogurt",
+          "calories": 100,
+          "carbohydrates": 6,
+          "proteins": 10,
+          "fats": 0.7
+        },
+        {
+          "id": 6,
+          "name": "Almonds",
+          "calories": 160,
+          "carbohydrates": 6,
+          "proteins": 6,
+          "fats": 14
+        }
+      ],
+      "dinner": [
+        {
+          "id": 7,
+          "name": "Salmon Fillet",
+          "calories": 250,
+          "carbohydrates": 0,
+          "proteins": 22,
+          "fats": 15
+        },
+        {
+          "id": 8,
+          "name": "Steamed Vegetables",
+          "calories": 90,
+          "carbohydrates": 10,
+          "proteins": 3,
+          "fats": 0.5
+        }
+      ]
     }
   ],
   "foods": [

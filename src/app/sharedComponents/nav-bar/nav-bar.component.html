@@ -1,14 +1,14 @@
 <header class="header">
-    <ul>
-      <!-- <li><img src="/public/LOGO.png" class="icono-principal" /></li> ESTE SERIA MI LOGO-->
-      <li *ngIf="!isLoggedIn"><a class="nav-item" (click)="login()">Sign In</a></li>
-      <li *ngIf="isLoggedIn"><a class="nav-item" (click)="logout()">Logout</a></li>
-      <li *ngIf="isLoggedIn"><a class="nav-item" (click)="navigateToUserProfile()">Profile</a></li>
-      <li><a (click)="navigateToHome()">Inicio</a></li>
-      <li><a href="http://localhost:4200/alimentos">Alimentos</a></li>
-      <li><a href="http://localhost:4200/recetas">Recetas</a></li>
-      <li><a href="http://localhost:4200/registros">Registros</a></li>
-      <li *ngIf="!isLoggedIn" ><button class="btn-empezar" (click)="navigateToRegister()">Register</button></li>
-  
-    </ul>
-  </header>
+  <ul>
+    <!-- <li><img src="/public/LOGO.png" class="icono-principal" /></li> ESTE SERIA MI LOGO-->
+    <li *ngIf="!isLoggedIn"><a class="nav-item" (click)="login()">Sign In</a></li>
+    <li *ngIf="isLoggedIn"><a class="nav-item" (click)="logout()">Logout</a></li>
+    <li *ngIf="isLoggedIn"><a class="nav-item" (click)="navigateToUserProfile()">Profile</a></li>
+    <li><a (click)="navigateToHome()">Inicio</a></li>
+    <li><a href="http://localhost:4200/alimentos">Alimentos</a></li>
+    <li><a href="http://localhost:4200/recetas">Recetas</a></li>
+    <li><a href="http://localhost:4200/my-Nutri-Track">Registros</a></li>
+    <li *ngIf="!isLoggedIn"><button class="btn-empezar" (click)="navigateToRegister()">Register</button></li>
+
+  </ul>
+</header>
