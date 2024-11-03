@@ -8,12 +8,8 @@ import { Meals } from '../interfaces/meals';
 })
 export class MealsService {
 
-  baseUrl = "http://localhost:3000/meals/";
 
-  constructor(private _httpServices: HttpClient) { }
 
-  getMeals(id: number, date: Date): Observable<Meals> {
-    return this._httpServices.get<Meals>(`${this.baseUrl}${id}/meals/${date}`);
-  }
+  
 
 }

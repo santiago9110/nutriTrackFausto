@@ -8,7 +8,7 @@ import { Food } from '../interfaces/food';
 })
 export class FoodApiService {
 
-  baseUrl = "http://localhost:3000/db/";
+  baseUrl = "http://localhost:3000/foods/";
 
   constructor(private _httpService: HttpClient) { }
 

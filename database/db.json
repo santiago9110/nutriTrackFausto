@@ -11,11 +11,24 @@
       "gender": "masculino",
       "age": 28,
       "caloriesNeeded": 2334.0625
+    },
+    {
+      "name": "Fausto",
+      "surname": "Fuertes",
+      "email": "fausto.fuertes.83@gmail.com",
+      "password": "contra123",
+      "height": 183,
+      "weight": 73,
+      "gender": "masculino",
+      "age": 20,
+      "caloriesNeeded": 2445.78125,
+      "id": "_i8liyt"
     }
   ],
   "meals": [
     {
       "id": "1",
+      "idUser": "c9bc",
       "date": "2020-12-23",
       "breakfast": [
         {

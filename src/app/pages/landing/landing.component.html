@@ -1,23 +1,23 @@
 <app-nav-bar></app-nav-bar>
 
-<h2 *ngIf="userName; else noUser">
+<!-- <h2 *ngIf="userName; else noUser">
     Bienvenido <strong>{{ userName }}</strong> a Nutrit-Track !
-</h2>
+</h2> -->
 
-<ng-template #noUser>
+<!-- <ng-template #noUser>
 <h2>Bienvenido!</h2>
-</ng-template>
+</ng-template> -->
 
 <div class="container">
     <div class="texto">
         <h1>
-            Tu
+            Your
             <span class="color">
-                cambio <br />
-                de vida</span>, <br />
-            ahora al <br />
-            alcance de <br />
-            tu <span class="color">mano</span>. <br />
+                life <br />
+                change <br> journey</span>, <br />
+            now at <br />
+            the reach <br />
+            of your <span class="color">hand</span>. <br />
         </h1>
         <p>
             ¡Bienvenido a un estilo de vida más saludable! <br />
@@ -28,7 +28,7 @@
     </div>
 
     <a [routerLink]="['/register']" routerLinkActive="router-link-active" >
-        <button class="comenzar">¡Comienza ahora!</button>
+        <button class="comenzar">¡Start now!</button>
     </a>
 </div>
 
