@@ -4,7 +4,7 @@ export interface User {
     id?: string;
     name: string;
     surname: string;
-    mail: string;
+    email: string;
     password: string;
     height: number;
     weight: number;

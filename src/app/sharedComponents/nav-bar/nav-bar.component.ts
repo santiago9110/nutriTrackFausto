@@ -23,6 +23,12 @@ export class NavBarComponent {
     });
   }
 
+
+  navigateToHome() {
+    this.router.navigate(['']);
+  }
+
+
   navigateToRegister() {
     this.router.navigate(['/register']);
   }
@@ -33,7 +39,14 @@ export class NavBarComponent {
 
   logout() {
     this.authService.logout(); // Llama al método de logout del servicio de autenticación
-    this.router.navigate(['']);
+    this.router.navigate(['']).then(() => {
+        window.location.reload(); // Recarga la página una vez que la navegación se complete
+    });
+}
+
+
+  navigateToUserProfile() {
+    this.router.navigate(['/userProfile']);
   }
 
 }

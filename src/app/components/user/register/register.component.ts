@@ -38,7 +38,7 @@ export class RegisterComponent {
       const newUser: User = {
         name: dataUser.name,
         surname: dataUser.surname,
-        mail: dataUser.mail,
+        email: dataUser.email,
         password: dataUser.password,
         height: dataUser.height,
         weight: dataUser.weight,
@@ -53,7 +53,6 @@ export class RegisterComponent {
       // Llama al servicio para registrar el usuario y luego redirige
       this.userService.addUser(newUser).subscribe({
         next: () => {
-
           this.router.navigate(['/userProfile']); // Redirige al perfil de usuario
         },
         error: (error) => {
