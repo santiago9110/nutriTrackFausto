@@ -9,7 +9,7 @@ import { LoginComponent } from './components/user/login/login.component';
 export const routes: Routes = [
     { path: 'alimentos', component: AlimentosComponent },
     { path: 'inicio', component: LandingComponent },
-    { path: 'recetas', component: RecetasComponent },
+    { path: 'recetas', component: RecetasComponent},
     {path:'register', component:RegisterFormComponent},
     {path:'userProfile',component:UserProfilePageComponent},
     {

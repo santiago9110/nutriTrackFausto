@@ -1,20 +1,19 @@
-<div>
-
+<div class="register-container">
     <h2>Formulario de Registro</h2>
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
-            <label for="nombre">Nombre:</label>
+            <label for="name">Nombre:</label>
             <input type="text" id="name" formControlName="name" />
         </div>
 
         <div class="form-group">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" formControlName="surname" />
+            <label for="surname">Apellido:</label>
+            <input type="text" id="surname" formControlName="surname" />
         </div>
 
         <div class="form-group">
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" formControlName="age" />
+            <label for="age">Edad:</label>
+            <input type="number" id="age" formControlName="age" />
         </div>
 
         <div class="form-group">
@@ -31,25 +30,25 @@
         </div>
 
         <div class="form-group">
-            <label for="peso">Peso (kg):</label>
-            <input type="number" id="peso" formControlName="weight" />
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" formControlName="weight" />
         </div>
 
         <div class="form-group">
-            <label for="altura">Altura (cm):</label>
-            <input type="number" id="altura" formControlName="height" />
+            <label for="height">Altura (cm):</label>
+            <input type="number" id="height" formControlName="height" />
         </div>
 
         <div class="form-group">
-            <label for="genero">Género:</label>
-            <select id="genero" formControlName="gender">
+            <label for="gender">Género:</label>
+            <select id="gender" formControlName="gender">
                 <option value="">Seleccione...</option>
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
             </select>
         </div>
 
-
-        <button type="submit">Registrar</button>
+        <button class="register-button" type="submit">Registrar</button>
     </form>
+
 </div>
