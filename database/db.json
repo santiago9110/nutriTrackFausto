@@ -46,27 +46,23 @@
           "carbohydrates": 27,
           "proteins": 1,
           "fats": 0.3
-        }
-      ],
-      "lunch": [
+        },
         {
           "id": 3,
-          "name": "Grilled Chicken Breast",
-          "calories": 200,
-          "carbohydrates": 0,
-          "proteins": 38,
-          "fats": 4.5
+          "name": "Scrambled Eggs",
+          "calories": 180,
+          "carbohydrates": 2,
+          "proteins": 12,
+          "fats": 14
         },
         {
           "id": 4,
-          "name": "Brown Rice",
-          "calories": 215,
-          "carbohydrates": 45,
+          "name": "Avocado Toast",
+          "calories": 250,
+          "carbohydrates": 30,
           "proteins": 5,
-          "fats": 1.8
-        }
-      ],
-      "snack": [
+          "fats": 12
+        },
         {
           "id": 5,
           "name": "Greek Yogurt",
@@ -77,16 +73,116 @@
         },
         {
           "id": 6,
+          "name": "Mixed Berries",
+          "calories": 80,
+          "carbohydrates": 20,
+          "proteins": 1,
+          "fats": 0.5
+        }
+      ],
+      "lunch": [
+        {
+          "id": 7,
+          "name": "Grilled Chicken Breast",
+          "calories": 200,
+          "carbohydrates": 0,
+          "proteins": 38,
+          "fats": 4.5
+        },
+        {
+          "id": 8,
+          "name": "Brown Rice",
+          "calories": 215,
+          "carbohydrates": 45,
+          "proteins": 5,
+          "fats": 1.8
+        },
+        {
+          "id": 9,
+          "name": "Quinoa Salad",
+          "calories": 220,
+          "carbohydrates": 39,
+          "proteins": 8,
+          "fats": 4
+        },
+        {
+          "id": 10,
+          "name": "Roasted Vegetables",
+          "calories": 150,
+          "carbohydrates": 25,
+          "proteins": 3,
+          "fats": 7
+        },
+        {
+          "id": 11,
+          "name": "Tofu Stir-Fry",
+          "calories": 300,
+          "carbohydrates": 20,
+          "proteins": 25,
+          "fats": 15
+        },
+        {
+          "id": 12,
+          "name": "Lentil Soup",
+          "calories": 180,
+          "carbohydrates": 30,
+          "proteins": 12,
+          "fats": 2
+        }
+      ],
+      "snack": [
+        {
+          "id": 13,
+          "name": "Greek Yogurt",
+          "calories": 100,
+          "carbohydrates": 6,
+          "proteins": 10,
+          "fats": 0.7
+        },
+        {
+          "id": 14,
           "name": "Almonds",
           "calories": 160,
           "carbohydrates": 6,
           "proteins": 6,
           "fats": 14
+        },
+        {
+          "id": 15,
+          "name": "Protein Bar",
+          "calories": 200,
+          "carbohydrates": 22,
+          "proteins": 20,
+          "fats": 6
+        },
+        {
+          "id": 16,
+          "name": "Hummus with Carrots",
+          "calories": 150,
+          "carbohydrates": 20,
+          "proteins": 5,
+          "fats": 7
+        },
+        {
+          "id": 17,
+          "name": "Popcorn",
+          "calories": 100,
+          "carbohydrates": 22,
+          "proteins": 3,
+          "fats": 1
+        },
+        {
+          "id": 18,
+          "name": "Apple Slices with Peanut Butter",
+          "calories": 200,
+          "carbohydrates": 27,
+          "proteins": 4,
+          "fats": 10
         }
       ],
       "dinner": [
         {
-          "id": 7,
+          "id": 19,
           "name": "Salmon Fillet",
           "calories": 250,
           "carbohydrates": 0,
@@ -94,12 +190,44 @@
           "fats": 15
         },
         {
-          "id": 8,
+          "id": 20,
           "name": "Steamed Vegetables",
           "calories": 90,
           "carbohydrates": 10,
           "proteins": 3,
           "fats": 0.5
+        },
+        {
+          "id": 21,
+          "name": "Beef Stir-Fry",
+          "calories": 300,
+          "carbohydrates": 10,
+          "proteins": 25,
+          "fats": 20
+        },
+        {
+          "id": 22,
+          "name": "Mashed Potatoes",
+          "calories": 220,
+          "carbohydrates": 36,
+          "proteins": 4,
+          "fats": 9
+        },
+        {
+          "id": 23,
+          "name": "Vegetable Curry",
+          "calories": 250,
+          "carbohydrates": 35,
+          "proteins": 8,
+          "fats": 10
+        },
+        {
+          "id": 24,
+          "name": "Shrimp Tacos",
+          "calories": 320,
+          "carbohydrates": 28,
+          "proteins": 20,
+          "fats": 15
         }
       ]
     },

@@ -1,5 +1,33 @@
-.container{
+.container {
     width: 500px;
-    background-color: aliceblue;
     border-radius: 20px;
+    border: 1px dashed grey;
+    padding: 20px;
+}
+
+.food-container {
+    width: 100%; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.chevron-button{
+    border: none;
+    background-color: white;
+    color: #66BB6A;
+    font-size: 20px
+}
+
+.add-button{
+    border: none;
+    background-color: white;
+    color: #66BB6A;
+    font-size: 22px;
+    margin-right: 20px;
 }
