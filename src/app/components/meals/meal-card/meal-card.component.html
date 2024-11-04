@@ -14,7 +14,7 @@
     @for (f of arrayFood; track $index) {
     <div class="food-container">
         <app-food-container [foodRecived]="f"></app-food-container>
-        <button class="btn-delete" (click)="emitDelete(f)">X</button>
+        <button class="btn-delete" (click)="emitDelete(f)" (click)="emitMealType()">X</button>
     </div>
     }
 

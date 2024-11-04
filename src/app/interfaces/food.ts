@@ -1,8 +1,9 @@
 export interface Food {
-    id?:number;
-    name?:string;
-    calories?:number;
-    carbohydrates?:number;
-    proteins?:number;
-    fats?:number;
+    id?: number;
+    name?: string;
+    caloriesPerGram?: number;
+    carbohydrates?: number;
+    proteins?: number;
+    fats?: number;
+    gramQuantity?: number;
 }

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { map, Observable, Subscription } from 'rxjs';
 import { Meals } from '../interfaces/meals';
 import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
 import { Food } from '../interfaces/food';
@@ -68,8 +68,21 @@ export class MealsService {
     );
   }
 
-  deleteFoodFromMeal(mealId: string | undefined, foodId: number | undefined):Observable<Food> {
-    return this._httpService.delete<Food>(`${this.baseUrl}/meals/${mealId}/breakfast/${foodId}`);
+  // Método para eliminar una FOOD de una comida MEALespecífica
+  deleteFoodFromMeal(mealId: string | undefined, foodId: number | undefined, mealType: 'breakfast' | 'lunch' | 'snack' | 'dinner' | undefined): Observable<Subscription> {
+    return this._httpService.get<Meals>(`${this.baseUrl}/${mealId}`).pipe(
+      map((meal: Meals) => {
+        // Filtrar el array de alimentos eliminando el alimento con el foodId especificado
+        if (meal[mealType]) {
+          meal[mealType] = meal[mealType]?.filter(food => food.id !== foodId);
+        }
+        return meal;
+      }),
+      // Enviar el objeto meal actualizado al servidor para persistir los cambios
+      map(updatedMeal => {
+        return this._httpService.put<Meals>(`${this.baseUrl}/${mealId}`, updatedMeal).subscribe();
+      })
+    );
   }
 
 }

@@ -13,10 +13,17 @@ import { NgClass } from '@angular/common';
 export class MealCardComponent {
   @Input() arrayFood?: Food[];
   @Output() deleteEmmiter = new EventEmitter();
-  isExpanded = false; // Estado del despliegue
+  @Input() mealType?: 'breakfast' | 'lunch' | 'snack' | 'dinner';
+  @Output() mealTypeEmitter = new EventEmitter();
+
+  isExpanded = false;
 
   emitDelete(food: Food) {
     this.deleteEmmiter.emit(food);
+  }
+
+  emitMealType() {
+    this.mealTypeEmitter.emit(this.mealType);
   }
 
   toggleExpand() {

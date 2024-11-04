@@ -15,10 +15,12 @@ export class MealListComponent implements OnInit {
   @Input() dateRecived?: string;
 
   meal?: Meals;
-  breakfast?: Food[];
-  lunch?: Food[];
-  snack?: Food[];
-  dinner?: Food[];
+  arrayBreakfast?: Food[];
+  arrayLunch?: Food[];
+  arraySnack?: Food[];
+  arrayDinner?: Food[];
+
+  mealTypeRecived?: 'breakfast' | 'lunch' | 'snack' | 'dinner';
 
   constructor(private _myMealsService: MealsService) { }
 
@@ -27,14 +29,20 @@ export class MealListComponent implements OnInit {
   ngOnInit(): void {
     this._myMealsService.getUserMealByDate('2020-12-23').subscribe(data => {
       this.meal = data[0];
-      this.breakfast = this.meal.breakfast;
-      this.lunch = this.meal.lunch;
-      this.snack = this.meal.snack;
-      this.dinner = this.meal.dinner;
+      this.arrayBreakfast = this.meal.breakfast;
+      this.arrayLunch = this.meal.lunch;
+      this.arraySnack = this.meal.snack;
+      this.arrayDinner = this.meal.dinner;
     });
   }
 
-  deleteFoodFromMeal(food: Food) {
-    this._myMealsService.deleteFoodFromMeal(this.meal?.id, food.id);
+  reciveMealType(mealType: 'breakfast' | 'lunch' | 'snack' | 'dinner' | undefined) {
+    this.mealTypeRecived = mealType;
   }
+
+  deleteFoodFromMeal(food: Food) {
+    this._myMealsService.deleteFoodFromMeal(this.meal?.id, food.id, this.mealTypeRecived).subscribe();
+    window.location.reload();
+  }
+
 }
