@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 export class NavBarComponent {
 
   isLoggedIn: boolean = false;
+  accountMenuVisible = false;
 
   constructor(private authService: AuthService, private router: Router) { }
 
@@ -51,6 +52,11 @@ export class NavBarComponent {
 
   navigateToNutriTrack(){
     this.router.navigate(['/my-Nutri-Track']);
+  }
+
+  toggleAccountMenu() {
+    this.accountMenuVisible = !this.accountMenuVisible;
+    console.log('Account menu visible:', this.accountMenuVisible); // Para depuración
   }
 
 }

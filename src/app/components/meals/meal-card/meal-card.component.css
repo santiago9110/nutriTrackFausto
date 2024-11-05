@@ -75,12 +75,10 @@ app-food-container {
     color: #66BB6A;
     font-size: 20px;
     transition: transform 0.3s ease;
-    /* Agrega transición para la rotación */
 }
 
 .chevron-button.rotate {
     transform: rotate(180deg);
-    /* Gira el chevron 180 grados cuando está expandido */
 }
 
 .add-button {

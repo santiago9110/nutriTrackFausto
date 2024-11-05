@@ -1,13 +1,24 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <header class="header">
   <ul>
-    <!-- <li><img src="/public/LOGO.png" class="icono-principal" /></li> ESTE SERIA MI LOGO-->
     <li *ngIf="!isLoggedIn"><a (click)="navigateToHome()">Home</a></li>
-    <button class="btn-nutriTrack" *ngIf="isLoggedIn" (click)="navigateToNutriTrack()"><span class="text">My Nutri Track</span></button>
     <li><a href="http://localhost:4200/alimentos">Food</a></li>
-    <li *ngIf="isLoggedIn"><a href="http://localhost:4200/recetas">Recepies</a></li>
-    <li *ngIf="isLoggedIn"><a class="nav-item" (click)="navigateToUserProfile()">Profile</a></li>
-    <li *ngIf="isLoggedIn"><a class="nav-item" (click)="logout()">Logout</a></li>
+    <li *ngIf="isLoggedIn"><a href="http://localhost:4200/recetas">Recipes</a></li>
+
     <li *ngIf="!isLoggedIn"><a class="nav-item" (click)="login()">Sign In</a></li>
     <li *ngIf="!isLoggedIn"><button class="btn-empezar" (click)="navigateToRegister()">Register</button></li>
+    <button class="btn-nutriTrack" *ngIf="isLoggedIn" (click)="navigateToNutriTrack()">
+      <span class="text">My Nutri Track</span>
+    </button>
+    <li *ngIf="isLoggedIn" (click)="toggleAccountMenu()">
+      <a class="nav-item"><i class="fas fa-user-circle"></i></a>
+      <div class="account-menu" *ngIf="accountMenuVisible">
+        <ul>
+          <li><a class="nav-item" (click)="navigateToUserProfile()">Profile</a></li>
+          <li><a class="nav-item" (click)="logout()">Logout</a></li>
+        </ul>
+      </div>
+    </li>
   </ul>
 </header>

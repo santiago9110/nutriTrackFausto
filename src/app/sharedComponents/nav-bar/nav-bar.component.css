@@ -31,12 +31,6 @@
     border: none;
 }
 
-.icono-principal {
-    height: 250PX;
-    margin-right: auto;
-    margin-left: 100px;
-}
-
 .btn-empezar {
     padding: 10px;
     color: white;
@@ -73,8 +67,10 @@
     color: #66BB6A;
 }
 
-
 .btn-nutriTrack {
+    margin-left: 40px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
     margin-right: 50px;
     position: relative;
     font-size: 30px;
@@ -84,30 +80,61 @@
     padding: 0 16px;
     background-image: linear-gradient(155deg, #393540, #27232f);
     transition: .5s;
-
-    & span {
-        animation-name: shine;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        background-image: linear-gradient(to right, #ff78fa 20%, #66BB6A 40%, #ffb36c 60%, #ff78fa 80%);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-size: 200%;
-        background-position: 0%;
-    }
 }
 
-@keyframes shine{
-    from{
+.btn-nutriTrack span {
+    animation-name: shine;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-image: linear-gradient(to right, #66BB6A 20%, #ff78fa 40%, #ff78fa 60%, #66BB6A 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    background-position: 0%;
+}
+
+.fa-user-circle{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes shine {
+    from {
         background-position: 0%;
     }
-    to{
+    to {
         background-position: 200%;
     }
 }
+/* Estilos para el menú desplegable de la cuenta */
+.account-menu {
+    display: none; /* Oculta el menú por defecto */
+    position: absolute; /* Asegúrate de que el menú esté posicionado correctamente */
+    background-color: white; /* Fondo del menú */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 100; /* Asegúrate de que esté por encima de otros elementos */
+}
 
-button:hover{
-    transform: scale(1.1);
+.account-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.account-menu li {
+    list-style: none; /* Sin viñetas */
+    padding: 10px; /* Espaciado interno */
+}
+
+.account-menu li a {
+    color: black; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Asegúrate de que toda el área sea clickeable */
+}
+
+.account-menu li a:hover {
+    background-color: #f0f0f0; /* Color al pasar el mouse */
 }

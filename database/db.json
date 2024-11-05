@@ -348,16 +348,6 @@
           "gramQuantity": 100
         },
         {
-          "id": 17,
-          "name": "Popcorn",
-          "caloriesPerGram": 1,
-          "calories": 100,
-          "carbohydrates": 22,
-          "proteins": 3,
-          "fats": 1,
-          "gramQuantity": 100
-        },
-        {
           "id": 18,
           "name": "Apple Slices with Peanut Butter",
           "caloriesPerGram": 2,
@@ -369,16 +359,6 @@
         }
       ],
       "dinner": [
-        {
-          "id": 19,
-          "name": "Salmon Fillet",
-          "caloriesPerGram": 2.5,
-          "calories": 250,
-          "carbohydrates": 0,
-          "proteins": 22,
-          "fats": 15,
-          "gramQuantity": 100
-        },
         {
           "id": 23,
           "name": "Vegetable Curry",

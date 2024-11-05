@@ -5,20 +5,23 @@ import { FoodContainerComponent } from "../../components/food-container/food-con
 import { Food } from '../../interfaces/food';
 import { FoodApiService } from '../../services/food-api.service';
 import { FoodDetailComponent } from '../../components/food-detail/food-detail.component';
+import { FoodTypeComponent } from "../../components/food/food-type/food-type.component";
 
 @Component({
   selector: 'app-alimentos',
   standalone: true,
-  imports: [NavBarComponent, BarraBuscadoraComidasComponent, FoodContainerComponent, FoodDetailComponent],
+  imports: [NavBarComponent, BarraBuscadoraComidasComponent, FoodContainerComponent, FoodDetailComponent, FoodTypeComponent],
   templateUrl: './alimentos.component.html',
   styleUrl: './alimentos.component.css'
 })
 export class AlimentosComponent {
   foodNameRecived?: string;
   arrayFoods?: Food[];
-  foodSelected?:Food;
+  foodSelected?: Food;
   allFood = true;
   oneFood = false;
+
+  foodTypeSelected?: string;
 
   constructor(private _foodApi: FoodApiService) { }
 
@@ -28,13 +31,18 @@ export class AlimentosComponent {
     })
   }
 
-  foodReciber(food:Food){
+  foodReciber(food: Food) {
     this.foodSelected = food;
     this.allFood = false;
     this.oneFood = true;
   }
 
-  changeMode(){
+  foodTypeReciver(foodType: string) {
+    this.foodTypeSelected = foodType;
+    console.log(this.foodTypeSelected);
+  }
+
+  changeMode() {
     this.allFood = true;
     this.oneFood = false;
   }

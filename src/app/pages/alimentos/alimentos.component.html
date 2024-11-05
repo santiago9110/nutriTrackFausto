@@ -13,5 +13,6 @@
     <button class="btn-back" (click)="changeMode()">Back</button>
     <app-food-detail [foodRecived]="foodSelected"></app-food-detail>
 </div>
-
 }
+
+<app-food-type (typeFoodEmitter)="foodTypeReciver($event)"></app-food-type>

@@ -27,7 +27,7 @@ export class MealListComponent implements OnInit {
 
   //falta cambiar la fecha hardcodeada por la fecha que me retorne el componente select fecha
   ngOnInit(): void {
-    this._myMealsService.getUserMealByDate('2020-12-23').subscribe(data => {
+    this._myMealsService.getUserMealByDate('2024-11-01').subscribe(data => {
       this.meal = data[0];
       this.arrayBreakfast = this.meal.breakfast;
       this.arrayLunch = this.meal.lunch;

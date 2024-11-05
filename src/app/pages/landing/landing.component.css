@@ -33,7 +33,6 @@ body {
 
 .texto p {
     font-size: 20px;
-    margin-top: 0;
 }
 
 .container button {
@@ -61,4 +60,16 @@ body {
 
 .color {
     color: #66BB6A;
+}
+
+@media(max-width:1520px){
+    .texto h1 {
+        font-size: 75px;
+        margin-top: 30px;
+        font-weight: 600;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
 }
