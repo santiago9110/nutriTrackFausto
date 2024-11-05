@@ -1,1 +1,7 @@
 <app-barra-buscadora-comidas (foodNameEmitter)="foodReciver($event)"></app-barra-buscadora-comidas>
+
+<input type="number">
+
+@for (f of arrayFoods; track $index) {
+    <app-food-container [foodRecived]="f" [editMode]="true"></app-food-container>
+}

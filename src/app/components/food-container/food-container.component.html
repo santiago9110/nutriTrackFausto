@@ -1,10 +1,19 @@
-<div class="container" (click)="emitFoodClick()">
+<div class="container" *ngIf="foodRecived" (click)="emitFoodClick()">
     <div class="name">
-        <p>{{foodRecived?.name}}</p>
+        <p>{{ foodRecived.name }}</p>
     </div>
 
     <div class="info">
-        <p class="calories">{{foodRecived?.proteins}} kcal</p>
-        <p>100gr</p>
+        @if (foodRecived) {
+        <p class="calories">{{ foodRecived.proteins * gramQuantity }} kcal</p>
+        }
+
+        <ng-container *ngIf="!editMode; else editTemplate">
+            <p>{{ gramQuantity }}</p>
+        </ng-container>
+
+        <ng-template #editTemplate>
+            <input type="number" [(ngModel)]="gramQuantity">
+        </ng-template>
     </div>
 </div>

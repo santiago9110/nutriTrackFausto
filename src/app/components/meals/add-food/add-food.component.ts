@@ -3,27 +3,26 @@ import { AlimentosComponent } from "../../../pages/alimentos/alimentos.component
 import { BarraBuscadoraComidasComponent } from "../../barra-buscadora-comidas/barra-buscadora-comidas.component";
 import { FoodApiService } from '../../../services/food-api.service';
 import { Food } from '../../../interfaces/food';
+import { FoodContainerComponent } from '../../food-container/food-container.component';
 
 @Component({
   selector: 'app-add-food',
   standalone: true,
-  imports: [AlimentosComponent, BarraBuscadoraComidasComponent],
+  imports: [AlimentosComponent, BarraBuscadoraComidasComponent, FoodContainerComponent],
   templateUrl: './add-food.component.html',
   styleUrl: './add-food.component.css'
 })
-export class AddFoodComponent implements OnInit {
+export class AddFoodComponent {
   foodRecived?: string;
-  arrayFoods?: Food[];
+  arrayFoods: Food[] | null = null;
 
   constructor(private _foodService: FoodApiService) { }
 
-  ngOnInit(): void {
-    this._foodService.getFoods().subscribe(data => {
+  foodReciver(food: string) {
+    this._foodService.getFoods(food).subscribe(data => {
       this.arrayFoods = data;
     })
   }
 
-  foodReciver(food: string) {
-    this.foodRecived = food;
-  }
+
 }
