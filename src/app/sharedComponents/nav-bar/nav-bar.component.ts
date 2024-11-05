@@ -14,7 +14,7 @@ export class NavBarComponent {
 
   isLoggedIn: boolean = false;
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
     // Subscribirse al estado de autenticación para actualizar `isLoggedIn`
@@ -40,13 +40,17 @@ export class NavBarComponent {
   logout() {
     this.authService.logout(); // Llama al método de logout del servicio de autenticación
     this.router.navigate(['']).then(() => {
-        window.location.reload(); // Recarga la página una vez que la navegación se complete
+      window.location.reload(); // Recarga la página una vez que la navegación se complete
     });
-}
+  }
 
 
   navigateToUserProfile() {
     this.router.navigate(['/userProfile']);
+  }
+
+  navigateToNutriTrack(){
+    this.router.navigate(['/my-Nutri-Track']);
   }
 
 }

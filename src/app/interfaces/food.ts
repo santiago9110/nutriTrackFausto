@@ -6,4 +6,5 @@ export interface Food {
     proteins?: number;
     fats?: number;
     gramQuantity?: number;
+    foodType?:string;
 }

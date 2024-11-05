@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: 80px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header ul {
@@ -19,14 +19,11 @@
     margin-left: 20px;
     list-style-type: none;
     height: 100%;
-    border-bottom: 4px solid transparent;
-    transition: .3s;
+    transition: .1s;
 }
 
 .header li:hover {
-    border: none;
     color: #66BB6A;
-    border-bottom: 4px solid #66BB6A;
 }
 
 .header li:last-child {
@@ -53,11 +50,8 @@
     width: 165px;
     margin: 15px;
     transition: background-color 0.5s, color 0.5s, transform 0.3s;
-    /* Transiciones ajustadas */
     position: relative;
-    /* Añadido para contexto de apilamiento */
     z-index: 2;
-    /* Asegura que el botón esté por encima de la imagen */
 }
 
 .btn-empezar:hover {
@@ -65,7 +59,6 @@
     border: 2px solid #66BB6A;
     color: #66BB6A;
     transform: scale(1.05);
-    /* Aumento sutil del tamaño */
 }
 
 .header a {
@@ -78,4 +71,43 @@
 
 .header a:hover {
     color: #66BB6A;
+}
+
+
+.btn-nutriTrack {
+    margin-right: 50px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    height: 52px;
+    border-radius: 10px;
+    padding: 0 16px;
+    background-image: linear-gradient(155deg, #393540, #27232f);
+    transition: .5s;
+
+    & span {
+        animation-name: shine;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background-image: linear-gradient(to right, #ff78fa 20%, #66BB6A 40%, #ffb36c 60%, #ff78fa 80%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 200%;
+        background-position: 0%;
+    }
+}
+
+@keyframes shine{
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 200%;
+    }
+}
+
+button:hover{
+    transform: scale(1.1);
 }

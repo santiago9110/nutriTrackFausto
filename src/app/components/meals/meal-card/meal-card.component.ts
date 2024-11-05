@@ -1,12 +1,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Food } from '../../../interfaces/food';
 import { FoodContainerComponent } from '../../food-container/food-container.component';
-import { NgClass } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-meal-card',
   standalone: true,
-  imports: [FoodContainerComponent, NgClass],
+  imports: [FoodContainerComponent, NgClass, NgIf],
   templateUrl: './meal-card.component.html',
   styleUrl: './meal-card.component.css'
 })

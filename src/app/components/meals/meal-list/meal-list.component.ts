@@ -12,7 +12,7 @@ import { Food } from '../../../interfaces/food';
   styleUrl: './meal-list.component.css'
 })
 export class MealListComponent implements OnInit {
-  @Input() dateRecived?: string;
+  @Input() dateRecived?: string; //fecha que vamos a recibir de otro componente
 
   meal?: Meals;
   arrayBreakfast?: Food[];
@@ -41,8 +41,20 @@ export class MealListComponent implements OnInit {
   }
 
   deleteFoodFromMeal(food: Food) {
-    this._myMealsService.deleteFoodFromMeal(this.meal?.id, food.id, this.mealTypeRecived).subscribe();
-    window.location.reload();
+    if (this.mealTypeRecived) {
+      this._myMealsService.deleteFoodFromMeal(this.meal?.id, food.id, this.mealTypeRecived)
+        .toPromise() // Convierte el Observable en una Promesa
+        .then(() => {
+          // Recarga la página una vez que la eliminación se complete
+          window.location.reload();
+        })
+        .catch(error => {
+          console.error('Error al eliminar la comida:', error);
+        });
+    } else {
+      console.log('NO MANDO NADA');
+    }
   }
 
+  
 }

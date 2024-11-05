@@ -27,72 +27,304 @@
   ],
   "meals": [
     {
-      "id": "1",
-      "idUser": "c9bc",
-      "date": "2020-12-23",
+      "id": "2",
+      "idUser": "_i8liyt",
+      "date": "2024-11-01",
       "breakfast": [
         {
-          "id": 5,
-          "name": "Greek Yogurt",
-          "caloriesPerGram": 1,
-          "calories": 100,
-          "carbohydrates": 6,
+          "id": 1,
+          "name": "Oatmeal with Fruits",
+          "caloriesPerGram": 3,
+          "calories": 300,
+          "carbohydrates": 54,
           "proteins": 10,
-          "fats": 0.7,
+          "fats": 5,
           "gramQuantity": 100
         },
         {
-          "id": 6,
-          "name": "Mixed Berries",
-          "caloriesPerGram": 0.8,
-          "calories": 80,
-          "carbohydrates": 20,
-          "proteins": 1,
-          "fats": 0.5,
-          "gramQuantity": 100
-        }
-      ],
-      "lunch": [
-        {
-          "id": 7,
-          "name": "Grilled Chicken Breast",
+          "id": 2,
+          "name": "Scrambled Eggs",
           "caloriesPerGram": 2,
           "calories": 200,
-          "carbohydrates": 0,
-          "proteins": 38,
-          "fats": 4.5,
+          "carbohydrates": 1,
+          "proteins": 14,
+          "fats": 15,
           "gramQuantity": 100
         },
         {
-          "id": 8,
-          "name": "Brown Rice",
-          "caloriesPerGram": 2.15,
-          "calories": 215,
-          "carbohydrates": 45,
-          "proteins": 5,
-          "fats": 1.8,
-          "gramQuantity": 100
-        },
-        {
-          "id": 9,
-          "name": "Quinoa Salad",
-          "caloriesPerGram": 2.2,
-          "calories": 220,
-          "carbohydrates": 39,
+          "id": 3,
+          "name": "Greek Yogurt with Honey",
+          "caloriesPerGram": 1.5,
+          "calories": 150,
+          "carbohydrates": 20,
           "proteins": 8,
           "fats": 4,
           "gramQuantity": 100
         },
         {
-          "id": 10,
-          "name": "Roasted Vegetables",
-          "caloriesPerGram": 1.5,
-          "calories": 150,
-          "carbohydrates": 25,
+          "id": 4,
+          "name": "Smoothie with Spinach and Banana",
+          "caloriesPerGram": 1,
+          "calories": 100,
+          "carbohydrates": 22,
           "proteins": 3,
-          "fats": 7,
+          "fats": 0,
           "gramQuantity": 100
         },
+        {
+          "id": 5,
+          "name": "Avocado Toast",
+          "caloriesPerGram": 2.5,
+          "calories": 250,
+          "carbohydrates": 30,
+          "proteins": 4,
+          "fats": 15,
+          "gramQuantity": 100
+        },
+        {
+          "id": 6,
+          "name": "Whole Grain Pancakes",
+          "caloriesPerGram": 2,
+          "calories": 200,
+          "carbohydrates": 40,
+          "proteins": 6,
+          "fats": 2,
+          "gramQuantity": 100
+        },
+        {
+          "id": 7,
+          "name": "Fruit Salad",
+          "caloriesPerGram": 1.2,
+          "calories": 120,
+          "carbohydrates": 30,
+          "proteins": 1,
+          "fats": 0,
+          "gramQuantity": 100
+        }
+      ],
+      "lunch": [
+        {
+          "id": 8,
+          "name": "Grilled Chicken Salad",
+          "caloriesPerGram": 3,
+          "calories": 300,
+          "carbohydrates": 10,
+          "proteins": 35,
+          "fats": 10,
+          "gramQuantity": 100
+        },
+        {
+          "id": 9,
+          "name": "Quinoa Bowl with Veggies",
+          "caloriesPerGram": 2.5,
+          "calories": 250,
+          "carbohydrates": 45,
+          "proteins": 8,
+          "fats": 5,
+          "gramQuantity": 100
+        },
+        {
+          "id": 10,
+          "name": "Turkey Sandwich",
+          "caloriesPerGram": 3,
+          "calories": 300,
+          "carbohydrates": 40,
+          "proteins": 25,
+          "fats": 8,
+          "gramQuantity": 100
+        },
+        {
+          "id": 11,
+          "name": "Vegetable Stir-Fry with Rice",
+          "caloriesPerGram": 2.5,
+          "calories": 250,
+          "carbohydrates": 45,
+          "proteins": 6,
+          "fats": 8,
+          "gramQuantity": 100
+        },
+        {
+          "id": 12,
+          "name": "Beef Tacos",
+          "caloriesPerGram": 3,
+          "calories": 300,
+          "carbohydrates": 30,
+          "proteins": 20,
+          "fats": 15,
+          "gramQuantity": 100
+        },
+        {
+          "id": 13,
+          "name": "Pasta Primavera",
+          "caloriesPerGram": 2,
+          "calories": 200,
+          "carbohydrates": 40,
+          "proteins": 7,
+          "fats": 3,
+          "gramQuantity": 100
+        },
+        {
+          "id": 14,
+          "name": "Sushi Rolls",
+          "caloriesPerGram": 2.5,
+          "calories": 250,
+          "carbohydrates": 30,
+          "proteins": 15,
+          "fats": 5,
+          "gramQuantity": 100
+        }
+      ],
+      "snack": [
+        {
+          "id": 15,
+          "name": "Mixed Nuts",
+          "caloriesPerGram": 5,
+          "calories": 500,
+          "carbohydrates": 20,
+          "proteins": 15,
+          "fats": 40,
+          "gramQuantity": 100
+        },
+        {
+          "id": 16,
+          "name": "Vegetable Hummus with Carrots",
+          "caloriesPerGram": 2,
+          "calories": 200,
+          "carbohydrates": 30,
+          "proteins": 5,
+          "fats": 8,
+          "gramQuantity": 100
+        },
+        {
+          "id": 17,
+          "name": "Rice Cakes with Almond Butter",
+          "caloriesPerGram": 3,
+          "calories": 300,
+          "carbohydrates": 30,
+          "proteins": 6,
+          "fats": 15,
+          "gramQuantity": 100
+        },
+        {
+          "id": 18,
+          "name": "Dark Chocolate Square",
+          "caloriesPerGram": 4,
+          "calories": 200,
+          "carbohydrates": 20,
+          "proteins": 2,
+          "fats": 15,
+          "gramQuantity": 50
+        },
+        {
+          "id": 19,
+          "name": "Fruit Smoothie",
+          "caloriesPerGram": 1.5,
+          "calories": 150,
+          "carbohydrates": 30,
+          "proteins": 2,
+          "fats": 2,
+          "gramQuantity": 100
+        },
+        {
+          "id": 20,
+          "name": "Greek Yogurt with Berries",
+          "caloriesPerGram": 1.5,
+          "calories": 150,
+          "carbohydrates": 20,
+          "proteins": 8,
+          "fats": 4,
+          "gramQuantity": 100
+        },
+        {
+          "id": 21,
+          "name": "Cheese Sticks",
+          "caloriesPerGram": 3,
+          "calories": 300,
+          "carbohydrates": 1,
+          "proteins": 25,
+          "fats": 22,
+          "gramQuantity": 100
+        }
+      ],
+      "dinner": [
+        {
+          "id": 22,
+          "name": "Baked Chicken Breast",
+          "caloriesPerGram": 2.5,
+          "calories": 250,
+          "carbohydrates": 0,
+          "proteins": 25,
+          "fats": 5,
+          "gramQuantity": 100
+        },
+        {
+          "id": 23,
+          "name": "Grilled Salmon with Asparagus",
+          "caloriesPerGram": 2.5,
+          "calories": 250,
+          "carbohydrates": 10,
+          "proteins": 30,
+          "fats": 10,
+          "gramQuantity": 100
+        },
+        {
+          "id": 24,
+          "name": "Stuffed Bell Peppers",
+          "caloriesPerGram": 2.5,
+          "calories": 250,
+          "carbohydrates": 20,
+          "proteins": 15,
+          "fats": 5,
+          "gramQuantity": 100
+        },
+        {
+          "id": 25,
+          "name": "Zucchini Noodles with Pesto",
+          "caloriesPerGram": 2,
+          "calories": 200,
+          "carbohydrates": 30,
+          "proteins": 8,
+          "fats": 10,
+          "gramQuantity": 100
+        },
+        {
+          "id": 26,
+          "name": "Beef Stir-Fry",
+          "caloriesPerGram": 3,
+          "calories": 300,
+          "carbohydrates": 20,
+          "proteins": 25,
+          "fats": 15,
+          "gramQuantity": 100
+        },
+        {
+          "id": 27,
+          "name": "Vegetable Lasagna",
+          "caloriesPerGram": 2.5,
+          "calories": 250,
+          "carbohydrates": 35,
+          "proteins": 12,
+          "fats": 8,
+          "gramQuantity": 100
+        },
+        {
+          "id": 28,
+          "name": "Shrimp Tacos",
+          "caloriesPerGram": 3,
+          "calories": 300,
+          "carbohydrates": 30,
+          "proteins": 20,
+          "fats": 15,
+          "gramQuantity": 100
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "idUser": "c9bc",
+      "date": "2020-12-23",
+      "breakfast": [],
+      "lunch": [
         {
           "id": 11,
           "name": "Tofu Stir-Fry",
@@ -102,39 +334,9 @@
           "proteins": 25,
           "fats": 15,
           "gramQuantity": 100
-        },
-        {
-          "id": 12,
-          "name": "Lentil Soup",
-          "caloriesPerGram": 1.8,
-          "calories": 180,
-          "carbohydrates": 30,
-          "proteins": 12,
-          "fats": 2,
-          "gramQuantity": 100
         }
       ],
       "snack": [
-        {
-          "id": 13,
-          "name": "Greek Yogurt",
-          "caloriesPerGram": 1,
-          "calories": 100,
-          "carbohydrates": 6,
-          "proteins": 10,
-          "fats": 0.7,
-          "gramQuantity": 100
-        },
-        {
-          "id": 14,
-          "name": "Almonds",
-          "caloriesPerGram": 1.6,
-          "calories": 160,
-          "carbohydrates": 6,
-          "proteins": 6,
-          "fats": 14,
-          "gramQuantity": 100
-        },
         {
           "id": 15,
           "name": "Protein Bar",
@@ -143,16 +345,6 @@
           "carbohydrates": 22,
           "proteins": 20,
           "fats": 6,
-          "gramQuantity": 100
-        },
-        {
-          "id": 16,
-          "name": "Hummus with Carrots",
-          "caloriesPerGram": 1.5,
-          "calories": 150,
-          "carbohydrates": 20,
-          "proteins": 5,
-          "fats": 7,
           "gramQuantity": 100
         },
         {
@@ -188,36 +380,6 @@
           "gramQuantity": 100
         },
         {
-          "id": 20,
-          "name": "Steamed Vegetables",
-          "caloriesPerGram": 0.9,
-          "calories": 90,
-          "carbohydrates": 10,
-          "proteins": 3,
-          "fats": 0.5,
-          "gramQuantity": 100
-        },
-        {
-          "id": 21,
-          "name": "Beef Stir-Fry",
-          "caloriesPerGram": 3,
-          "calories": 300,
-          "carbohydrates": 10,
-          "proteins": 25,
-          "fats": 20,
-          "gramQuantity": 100
-        },
-        {
-          "id": 22,
-          "name": "Mashed Potatoes",
-          "caloriesPerGram": 2.2,
-          "calories": 220,
-          "carbohydrates": 36,
-          "proteins": 4,
-          "fats": 9,
-          "gramQuantity": 100
-        },
-        {
           "id": 23,
           "name": "Vegetable Curry",
           "caloriesPerGram": 2.5,
@@ -225,16 +387,6 @@
           "carbohydrates": 35,
           "proteins": 8,
           "fats": 10,
-          "gramQuantity": 100
-        },
-        {
-          "id": 24,
-          "name": "Shrimp Tacos",
-          "caloriesPerGram": 3.2,
-          "calories": 320,
-          "carbohydrates": 28,
-          "proteins": 20,
-          "fats": 15,
           "gramQuantity": 100
         }
       ]

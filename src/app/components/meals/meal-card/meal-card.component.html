@@ -5,18 +5,24 @@
         <button class="add-button">
             <i class="fas fa-plus"></i>
         </button>
-        <button (click)="toggleExpand()" class="chevron-button">
+        <button (click)="toggleExpand()" class="chevron-button" [ngClass]="{'rotate': isExpanded}">
             <i class="fas" [ngClass]="isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
         </button>
     </div>
 
-    @if (isExpanded) {
-    @for (f of arrayFood; track $index) {
-    <div class="food-container">
-        <app-food-container [foodRecived]="f"></app-food-container>
-        <button class="btn-delete" (click)="emitDelete(f)" (click)="emitMealType()">X</button>
+    <div class="food-list" [ngClass]="{'expanded': isExpanded}">
+        <div *ngIf="isExpanded">
+            @for (f of arrayFood; track $index) {
+            <div class="food-item">
+                <app-food-container [foodRecived]="f"></app-food-container>
+                <button class="btn-delete" (click)="emitMealType()" (click)="emitDelete(f)">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="btn-edit">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+            </div>
+            }
+        </div>
     </div>
-    }
-
-    }
 </div>
