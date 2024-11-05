@@ -70,36 +70,6 @@
           "proteins": 3,
           "fats": 0,
           "gramQuantity": 100
-        },
-        {
-          "id": 5,
-          "name": "Avocado Toast",
-          "caloriesPerGram": 2.5,
-          "calories": 250,
-          "carbohydrates": 30,
-          "proteins": 4,
-          "fats": 15,
-          "gramQuantity": 100
-        },
-        {
-          "id": 6,
-          "name": "Whole Grain Pancakes",
-          "caloriesPerGram": 2,
-          "calories": 200,
-          "carbohydrates": 40,
-          "proteins": 6,
-          "fats": 2,
-          "gramQuantity": 100
-        },
-        {
-          "id": 7,
-          "name": "Fruit Salad",
-          "caloriesPerGram": 1.2,
-          "calories": 120,
-          "carbohydrates": 30,
-          "proteins": 1,
-          "fats": 0,
-          "gramQuantity": 100
         }
       ],
       "lunch": [
@@ -141,36 +111,6 @@
           "carbohydrates": 45,
           "proteins": 6,
           "fats": 8,
-          "gramQuantity": 100
-        },
-        {
-          "id": 12,
-          "name": "Beef Tacos",
-          "caloriesPerGram": 3,
-          "calories": 300,
-          "carbohydrates": 30,
-          "proteins": 20,
-          "fats": 15,
-          "gramQuantity": 100
-        },
-        {
-          "id": 13,
-          "name": "Pasta Primavera",
-          "caloriesPerGram": 2,
-          "calories": 200,
-          "carbohydrates": 40,
-          "proteins": 7,
-          "fats": 3,
-          "gramQuantity": 100
-        },
-        {
-          "id": 14,
-          "name": "Sushi Rolls",
-          "caloriesPerGram": 2.5,
-          "calories": 250,
-          "carbohydrates": 30,
-          "proteins": 15,
-          "fats": 5,
           "gramQuantity": 100
         }
       ],
@@ -214,36 +154,6 @@
           "proteins": 2,
           "fats": 15,
           "gramQuantity": 50
-        },
-        {
-          "id": 19,
-          "name": "Fruit Smoothie",
-          "caloriesPerGram": 1.5,
-          "calories": 150,
-          "carbohydrates": 30,
-          "proteins": 2,
-          "fats": 2,
-          "gramQuantity": 100
-        },
-        {
-          "id": 20,
-          "name": "Greek Yogurt with Berries",
-          "caloriesPerGram": 1.5,
-          "calories": 150,
-          "carbohydrates": 20,
-          "proteins": 8,
-          "fats": 4,
-          "gramQuantity": 100
-        },
-        {
-          "id": 21,
-          "name": "Cheese Sticks",
-          "caloriesPerGram": 3,
-          "calories": 300,
-          "carbohydrates": 1,
-          "proteins": 25,
-          "fats": 22,
-          "gramQuantity": 100
         }
       ],
       "dinner": [
@@ -285,36 +195,6 @@
           "carbohydrates": 30,
           "proteins": 8,
           "fats": 10,
-          "gramQuantity": 100
-        },
-        {
-          "id": 26,
-          "name": "Beef Stir-Fry",
-          "caloriesPerGram": 3,
-          "calories": 300,
-          "carbohydrates": 20,
-          "proteins": 25,
-          "fats": 15,
-          "gramQuantity": 100
-        },
-        {
-          "id": 27,
-          "name": "Vegetable Lasagna",
-          "caloriesPerGram": 2.5,
-          "calories": 250,
-          "carbohydrates": 35,
-          "proteins": 12,
-          "fats": 8,
-          "gramQuantity": 100
-        },
-        {
-          "id": 28,
-          "name": "Shrimp Tacos",
-          "caloriesPerGram": 3,
-          "calories": 300,
-          "carbohydrates": 30,
-          "proteins": 20,
-          "fats": 15,
           "gramQuantity": 100
         }
       ]

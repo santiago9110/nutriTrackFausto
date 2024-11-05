@@ -1,18 +1,13 @@
 body {
-    background-image: url('/src/assets/images/FONDO-LANDING.png');
-    /* Ruta de la imagen */
+    background-image: url('https://github.com/faustofuertes/faustofuertes.github.io/blob/master/img/fondo.png?raw=true');
     background-size: cover;
-    /* Escala la imagen para cubrir toda la página */
     background-position: center;
-    /* Centra la imagen */
     background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
     height: 100vh;
-    /* Hace que el fondo cubra toda la altura visible de la página */
     margin: 0;
     padding: 0;
     position: relative;
-    /* Establece un contexto de apilamiento para los elementos hijos */
+    z-index: 1; /* Añadir z-index para asegurarte de que el body esté por debajo del nav bar */
 }
 
 .container {
@@ -22,7 +17,13 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Este z-index debe estar por encima del body, pero debajo del nav bar */
+}
+
+/* Asegúrate de que tu nav bar tenga un z-index alto */
+app-nav-bar {
+    position: relative; /* Asegúrate de que tenga un contexto de apilamiento */
+    z-index: 10; /* Este z-index debe ser mayor que el de body y container */
 }
 
 .texto h1 {

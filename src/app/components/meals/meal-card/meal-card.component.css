@@ -2,13 +2,13 @@
     width: 500px;
     border-radius: 30px;
     border: 2px dashed black;
-    padding: 20px;
+    padding: 10px;
 }
 
 .buttons {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -73,8 +73,9 @@ app-food-container {
     border: none;
     background-color: white;
     color: #66BB6A;
-    font-size: 20px;
+    font-size: 25px;
     transition: transform 0.3s ease;
+    margin-right: 10px;
 }
 
 .chevron-button.rotate {
@@ -85,6 +86,6 @@ app-food-container {
     border: none;
     background-color: white;
     color: #66BB6A;
-    font-size: 22px;
-    margin-right: 20px;
+    font-size: 27px;
+    margin-left: 10px;
 }
