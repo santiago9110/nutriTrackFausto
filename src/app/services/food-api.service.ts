@@ -17,4 +17,9 @@ export class FoodApiService {
     const url = `${this.baseUrl}?name_like=${encodeURIComponent(foodName)}`;
     return this._httpService.get<Food[]>(url);
   }
+
+  getFoodsByType(foodType: string): Observable<Food[]> {
+    const url = `${this.baseUrl}?foodType_like=${encodeURIComponent(foodType)}`;
+    return this._httpService.get<Food[]>(url);
+  }
 }

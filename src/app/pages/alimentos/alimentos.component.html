@@ -5,7 +5,7 @@
 @if(allFood){
 <div class="food-container">
     @for (f of arrayFoods; track $index) {
-    <app-food-container [foodRecived]="f" (foodClickEmitter)="foodReciber($event)"></app-food-container>
+    <app-food-container [foodRecived]="f" (foodClickEmitter)="foodReciber($event)" [flag]="false"></app-food-container>
     }
 </div>
 }@else if (oneFood) {

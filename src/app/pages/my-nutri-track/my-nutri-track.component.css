@@ -13,7 +13,8 @@
 }
 
 .graph {
-    background-color: #e0e0e0;
+    background-color: #66BB6A;
+    border-radius: 50px;
     order: 1;
 }
 

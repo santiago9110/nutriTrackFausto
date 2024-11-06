@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,16 +7,29 @@
     cursor: pointer;
 }
 
-.container:hover{
-    transform: scale(1.01);
-}
 
-.name{
+.name {
+    display: flex;
     font-size: 18px;
     font-weight: 500;
 }
 
-.calories{
+.greyColor {
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.calories {
     font-size: 18px;
     font-weight: 500;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.highlighted {
+    border: 2px solid #66BB6A;
 }

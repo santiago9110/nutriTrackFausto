@@ -38,8 +38,9 @@ export class AlimentosComponent {
   }
 
   foodTypeReciver(foodType: string) {
-    this.foodTypeSelected = foodType;
-    console.log(this.foodTypeSelected);
+    this._foodApi.getFoodsByType(foodType).subscribe(data =>{
+      this.arrayFoods = data;
+    })
   }
 
   changeMode() {
