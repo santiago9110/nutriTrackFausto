@@ -5,7 +5,9 @@
             <p class="name">{{foodRecived.name}}</p>
             <p class="calories"><br>{{foodRecived.caloriesPerGram * foodRecived.gramQuantity}} kcal</p>
         </div>
-        <p class="grams"><span class="colorGrey">{{foodRecived.gramQuantity}} gr.</span></p>
+        <span class="colorGrey">
+            <p>{{foodRecived.gramQuantity}} gr.</p>
+        </span>
     </div>
     }@else {
     <div class="name">
@@ -29,8 +31,10 @@
         <p>{{foodRecived.name}} <br> <span class="greyColor">{{foodRecived.foodType}}</span> </p>
     </div>
     <div class="info">
-        <p class="calories">{{foodRecived.caloriesPerGram * 100 | number:'1.2-2'}} kcal</p>
-        <p>100gr</p>
+        <p class="calories">{{foodRecived.caloriesPerGram * 100 | number:'1.0-0'}} kcal</p>
+        <span class="greyColor">
+            <p>100 gr</p>
+        </span>
     </div>
     }
 </div>

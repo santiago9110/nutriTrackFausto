@@ -52,44 +52,14 @@
           "foodType": "carb"
         },
         {
-          "id": 1,
-          "name": "Food 1",
-          "caloriesPerGram": 1,
-          "carbohydrates": 5,
-          "proteins": 5,
-          "fats": 2,
-          "gramQuantity": 0,
-          "foodType": "fruits"
-        },
-        {
-          "id": 8,
-          "name": "Food 8",
-          "caloriesPerGram": 8,
-          "carbohydrates": 12,
-          "proteins": 12,
-          "fats": 9,
-          "gramQuantity": 0,
-          "foodType": "beverages"
-        },
-        {
-          "id": 109,
-          "name": "Food 109",
-          "caloriesPerGram": 9,
-          "carbohydrates": 13,
-          "proteins": 8,
-          "fats": 10,
-          "gramQuantity": 0,
-          "foodType": "fruits"
-        },
-        {
-          "id": 1,
-          "name": "Food 1",
-          "caloriesPerGram": 1,
-          "carbohydrates": 5,
-          "proteins": 5,
-          "fats": 2,
-          "gramQuantity": 15,
-          "foodType": "fruits"
+          "id": 3,
+          "name": "Food 3",
+          "caloriesPerGram": 3,
+          "carbohydrates": 7,
+          "proteins": 7,
+          "fats": 4,
+          "gramQuantity": 29,
+          "foodType": "grains"
         }
       ],
       "lunch": [
@@ -111,6 +81,16 @@
           "proteins": 15,
           "fats": 2,
           "gramQuantity": 23,
+          "foodType": "dairy"
+        },
+        {
+          "id": 5,
+          "name": "Food 5",
+          "caloriesPerGram": 5,
+          "carbohydrates": 9,
+          "proteins": 9,
+          "fats": 6,
+          "gramQuantity": 40,
           "foodType": "dairy"
         }
       ],
@@ -156,6 +136,16 @@
           "fats": 10,
           "gramQuantity": 100,
           "foodType": "dinner"
+        },
+        {
+          "id": 2,
+          "name": "Food 2",
+          "caloriesPerGram": 2,
+          "carbohydrates": 6,
+          "proteins": 6,
+          "fats": 3,
+          "gramQuantity": 100,
+          "foodType": "vegetables"
         }
       ]
     },
