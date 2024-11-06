@@ -2,24 +2,29 @@
     <div class="mealType">
         <label for="">Breakfast</label>
         <app-meal-card [arrayFood]="arrayBreakfast" (mealTypeEmitter)="reciveMealType($event)"
-            (deleteEmmiter)="deleteFoodFromMeal($event)" [mealType]="'breakfast'"> </app-meal-card>
+            (deleteEmmiter)="deleteFoodFromMeal($event)" [mealType]="'breakfast'"
+            (addModeEmmiter)="emitAddMode('breakfast')">
+        </app-meal-card>
     </div>
 
     <div class="mealType">
         <label for="">Lunch</label>
         <app-meal-card [arrayFood]="arrayLunch" (mealTypeEmitter)="reciveMealType($event)"
-            (deleteEmmiter)="deleteFoodFromMeal($event)" [mealType]="'lunch'"></app-meal-card>
+            (deleteEmmiter)="deleteFoodFromMeal($event)" [mealType]="'lunch'"
+            (addModeEmmiter)="emitAddMode('lunch')"></app-meal-card>
     </div>
 
     <div class="mealType">
         <label for="">Snack</label>
         <app-meal-card [arrayFood]="arraySnack" (mealTypeEmitter)="reciveMealType($event)"
-            (deleteEmmiter)="deleteFoodFromMeal($event)" [mealType]="'snack'"></app-meal-card>
+            (deleteEmmiter)="deleteFoodFromMeal($event)" [mealType]="'snack'"
+            (addModeEmmiter)="emitAddMode('snack')"></app-meal-card>
     </div>
 
     <div class="mealType">
         <label for="">Dinner</label>
         <app-meal-card [arrayFood]="arrayDinner" (mealTypeEmitter)="reciveMealType($event)"
-            (deleteEmmiter)="deleteFoodFromMeal($event)" [mealType]="'dinner'"></app-meal-card>
+            (deleteEmmiter)="deleteFoodFromMeal($event)" [mealType]="'dinner'"
+            (addModeEmmiter)="emitAddMode('dinner')"></app-meal-card>
     </div>
 </div>

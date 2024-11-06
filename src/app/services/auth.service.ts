@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject,Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { User } from '../interfaces/user';
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class AuthService {
   private isAuthenticatedSubject = new BehaviorSubject<boolean>(!!localStorage.getItem('userToken'));
   isAuthenticated$ = this.isAuthenticatedSubject.asObservable();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   login(email: string, password: string): Observable<boolean> {
     return new Observable<boolean>(observer => {
@@ -21,6 +21,8 @@ export class AuthService {
         const user = users.find(u => u.email === email && u.password === password);
 
         if (user && user.id) {
+          const currentDate = new Date().toISOString().split('T')[0]; // Formato: "YYYY-MM-DD"
+          localStorage.setItem('loginDate', currentDate); // Guardamos la fecha en formato "YYYY-MM-DD"
           localStorage.setItem('userToken', user.id); // Guardamos el ID del usuario en el localStorage
           this.isAuthenticatedSubject.next(true); // Emitimos que el usuario está autenticado
           observer.next(true);

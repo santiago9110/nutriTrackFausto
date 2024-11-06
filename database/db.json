@@ -32,77 +32,25 @@
       "date": "2024-11-01",
       "breakfast": [
         {
-          "id": 1,
-          "name": "Oatmeal with Fruits",
-          "caloriesPerGram": 3,
-          "calories": 300,
-          "carbohydrates": 54,
-          "proteins": 10,
-          "fats": 5,
-          "gramQuantity": 100
+          "id": "1",
+          "name": "Apple",
+          "calories": 95,
+          "carbohydrates": 25,
+          "proteins": 0.5,
+          "fats": 0.3,
+          "gramQuantity": 0
         },
         {
-          "id": 2,
-          "name": "Scrambled Eggs",
-          "caloriesPerGram": 2,
-          "calories": 200,
-          "carbohydrates": 1,
-          "proteins": 14,
-          "fats": 15,
-          "gramQuantity": 100
-        },
-        {
-          "id": 3,
-          "name": "Greek Yogurt with Honey",
-          "caloriesPerGram": 1.5,
-          "calories": 150,
-          "carbohydrates": 20,
-          "proteins": 8,
-          "fats": 4,
-          "gramQuantity": 100
-        },
-        {
-          "id": 4,
-          "name": "Smoothie with Spinach and Banana",
-          "caloriesPerGram": 1,
-          "calories": 100,
-          "carbohydrates": 22,
-          "proteins": 3,
-          "fats": 0,
-          "gramQuantity": 100
+          "id": "1",
+          "name": "Apple",
+          "calories": 95,
+          "carbohydrates": 25,
+          "proteins": 0.5,
+          "fats": 0.3,
+          "gramQuantity": 14
         }
       ],
       "lunch": [
-        {
-          "id": 8,
-          "name": "Grilled Chicken Salad",
-          "caloriesPerGram": 3,
-          "calories": 300,
-          "carbohydrates": 10,
-          "proteins": 35,
-          "fats": 10,
-          "gramQuantity": 100
-        },
-        {
-          "id": 9,
-          "name": "Quinoa Bowl with Veggies",
-          "caloriesPerGram": 2.5,
-          "calories": 250,
-          "carbohydrates": 45,
-          "proteins": 8,
-          "fats": 5,
-          "gramQuantity": 100
-        },
-        {
-          "id": 10,
-          "name": "Turkey Sandwich",
-          "caloriesPerGram": 3,
-          "calories": 300,
-          "carbohydrates": 40,
-          "proteins": 25,
-          "fats": 8,
-          "gramQuantity": 100
-        },
         {
           "id": 11,
           "name": "Vegetable Stir-Fry with Rice",
@@ -112,6 +60,15 @@
           "proteins": 6,
           "fats": 8,
           "gramQuantity": 100
+        },
+        {
+          "id": "1",
+          "name": "Apple",
+          "calories": 95,
+          "carbohydrates": 25,
+          "proteins": 0.5,
+          "fats": 0.3,
+          "gramQuantity": 0
         }
       ],
       "snack": [

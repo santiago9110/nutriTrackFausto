@@ -78,12 +78,13 @@ export class MealsService {
   }
 
 
+
   addFoodToMeal(
-    mealId: string | undefined,
+    mealId: number | undefined,
     food: Food | undefined,
     mealType: 'breakfast' | 'lunch' | 'snack' | 'dinner' | undefined
   ): Observable<Meals> {
-    // Asegúrate de manejar casos donde mealId, food o mealType sean indefinidos
+    // Validación de parámetros
     console.log(mealType, food);
     if (!mealId || !food || !mealType) {
       return throwError('Faltan parámetros necesarios');
@@ -103,6 +104,8 @@ export class MealsService {
       switchMap(updatedMeal => this._httpService.put<Meals>(`${this.baseUrl}/${mealId}`, updatedMeal))
     );
   }
+
+
 
 
 }

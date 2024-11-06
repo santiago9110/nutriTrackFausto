@@ -6,7 +6,6 @@ import { RegisterFormComponent } from './pages/register-form/register-form.compo
 import { UserProfilePageComponent } from './pages/user/user-profile-page/user-profile-page.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { MyNutriTrackComponent } from './pages/my-nutri-track/my-nutri-track.component';
-import { AddFoodToMealComponent } from './pages/add-food-to-meal/add-food-to-meal.component';
 
 export const routes: Routes = [
     { path: 'alimentos', component: AlimentosComponent },
@@ -15,7 +14,6 @@ export const routes: Routes = [
     { path: 'register', component: RegisterFormComponent },
     { path: 'userProfile', component: UserProfilePageComponent },
     { path: 'my-Nutri-Track', component: MyNutriTrackComponent },
-    { path: 'add-food', component: AddFoodToMealComponent },
     {
         path: 'login',
         component: LoginComponent, // Ruta pública para el login

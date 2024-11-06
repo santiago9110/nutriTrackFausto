@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, output, Output } from '@angular/core';
 import { MealCardComponent } from "../meal-card/meal-card.component";
 import { MealsService } from '../../../services/meals.service';
 import { Meals } from '../../../interfaces/meals';
@@ -12,14 +12,17 @@ import { Food } from '../../../interfaces/food';
   styleUrl: './meal-list.component.css'
 })
 export class MealListComponent implements OnInit {
-  @Input() dateRecived?: string; //fecha que vamos a recibir de otro componente
+  @Input() dateRecived?: string; //fecha que recibimos del componente de seleccionar fechas
+  @Output() addModeEmitter = new EventEmitter(); //emite el evento de add-food a my-nutri-track
+  @Output() mealTypeEmmiter = new EventEmitter(); //emite el mealType a my-nutri-track
+  @Output() mealIdEmmiter = new EventEmitter(); //emite el mealId a my-nutri-track
+
 
   meal?: Meals;
   arrayBreakfast?: Food[];
   arrayLunch?: Food[];
   arraySnack?: Food[];
   arrayDinner?: Food[];
-
   mealTypeRecived?: 'breakfast' | 'lunch' | 'snack' | 'dinner';
 
   constructor(private _myMealsService: MealsService) { }
@@ -56,5 +59,11 @@ export class MealListComponent implements OnInit {
     }
   }
 
-  
+  //Le pasa el mealType y el mealId a my-nutri-track cunado se clickea el boton de + (añadir food)
+  emitAddMode(mealType: 'breakfast' | 'lunch' | 'snack' | 'dinner' | undefined) {
+    this.mealTypeEmmiter.emit(mealType);
+    this.mealIdEmmiter.emit(this.meal?.id);
+    this.addModeEmitter.emit()
+  }
+
 }
