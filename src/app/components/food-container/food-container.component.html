@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <div class="container" (click)="emitFoodClick()" [ngClass]="{'highlighted': isHighlighted}" (click)="toggleHighlight()">
     @if(flag){
     <div class="info">
@@ -15,7 +17,7 @@
             <img *ngSwitchCase="'fruits'" src="https://img.icons8.com/color/96/group-of-fruits.png" alt="fruits">
             <img *ngSwitchCase="'vegetables'" src="https://img.icons8.com/fluency/96/group-of-vegetables.png"
                 alt="vegetables">
-            <img *ngSwitchCase="'grains'" src="https://img.icons8.com/fluency/96/group-of-vegetables.png" alt="grains">
+            <img *ngSwitchCase="'grains'" src="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/external-grains-agriculture-icongeek26-flat-icongeek26.png" alt="external-grains-agriculture-icongeek26-flat-icongeek26"/>
             <img *ngSwitchCase="'proteins'" src="https://img.icons8.com/fluency/96/steak-medium.png" alt="proteins">
             <img *ngSwitchCase="'dairy'" src="https://img.icons8.com/color/96/milk-bottle.png" alt="dairy">
             <img *ngSwitchCase="'fatsAndOils'" src="https://img.icons8.com/color/96/olive-oil.png" alt="fatsAndOils">

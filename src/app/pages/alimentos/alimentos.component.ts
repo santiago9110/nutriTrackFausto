@@ -17,7 +17,7 @@ import { FoodTypeComponent } from "../../components/food/food-type/food-type.com
 export class AlimentosComponent {
   foodNameRecived?: string;
   arrayFoods?: Food[];
-  foodSelected?: Food;
+  foodSelected: Food = { id: 0, name: '', caloriesPerGram: 0, carbohydrates: 0, proteins: 0, fats: 0, gramQuantity: 0, foodType: '' };
   allFood = true;
   oneFood = false;
 
@@ -38,7 +38,7 @@ export class AlimentosComponent {
   }
 
   foodTypeReciver(foodType: string) {
-    this._foodApi.getFoodsByType(foodType).subscribe(data =>{
+    this._foodApi.getFoodsByType(foodType).subscribe(data => {
       this.arrayFoods = data;
     })
   }

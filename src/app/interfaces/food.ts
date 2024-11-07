@@ -7,4 +7,5 @@ export interface Food {
     fats: number;
     gramQuantity: number;
     foodType:string;
+    foodDesc?:string;
 }
