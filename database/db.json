@@ -60,6 +60,17 @@
           "fats": 4,
           "gramQuantity": 29,
           "foodType": "grains"
+        },
+        {
+          "id": 5,
+          "name": "Banana",
+          "caloriesPerGram": 0.89,
+          "carbohydrates": 23,
+          "proteins": 1.1,
+          "fats": 0.3,
+          "gramQuantity": 30,
+          "foodType": "fruits",
+          "foodDesc": "A typical fruits item with moderate nutritional value."
         }
       ],
       "lunch": [
